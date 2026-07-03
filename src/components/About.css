@@ -1,0 +1,51 @@
+.about {
+  background: #070b1a;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.about-card {
+  background: rgba(20, 25, 50, 0.6);
+  border: 1px solid rgba(100, 140, 255, 0.12);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(100, 140, 255, 0.3);
+  box-shadow: 0 8px 30px rgba(74, 122, 255, 0.1);
+}
+
+.about-card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-card h3 {
+  font-size: 1.2rem;
+  color: #c0d4ff;
+  margin-bottom: 0.8rem;
+}
+
+.about-card p {
+  color: #8892b0;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+}
+
+.about-card p:last-child {
+  margin-bottom: 0;
+}
+
+.about-en {
+  font-size: 0.85rem !important;
+  color: #5a6580 !important;
+  font-style: italic;
+}
