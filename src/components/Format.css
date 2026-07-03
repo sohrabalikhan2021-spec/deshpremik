@@ -1,0 +1,138 @@
+.format {
+  background: linear-gradient(180deg, #070b1a 0%, #0a0f25 100%);
+}
+
+.format-timeline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.format-step {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  flex: 1;
+  min-width: 220px;
+  max-width: 260px;
+}
+
+.format-step-number {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4a7aff, #6e42ca);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  z-index: 1;
+}
+
+.format-step-content {
+  background: rgba(20, 25, 50, 0.6);
+  border: 1px solid rgba(100, 140, 255, 0.12);
+  border-radius: 12px;
+  padding: 1.5rem;
+  flex: 1;
+  transition: all 0.3s ease;
+}
+
+.format-step-content:hover {
+  border-color: rgba(100, 140, 255, 0.3);
+  transform: translateY(-3px);
+}
+
+.format-step-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.format-step-content h3 {
+  color: #c0d4ff;
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.format-step-content h4 {
+  color: #6ea8fe;
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin-bottom: 0.8rem;
+}
+
+.format-step-content p {
+  color: #8892b0;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.format-step-connector {
+  display: none;
+}
+
+.exam-types {
+  margin-top: 2rem;
+}
+
+.exam-types-title {
+  text-align: center;
+  color: #c0d4ff;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.exam-types-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.exam-type-card {
+  background: rgba(20, 25, 50, 0.6);
+  border: 1px solid rgba(100, 140, 255, 0.12);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.exam-type-card:hover {
+  border-color: rgba(100, 140, 255, 0.3);
+}
+
+.exam-type-card h4 {
+  color: #c0d4ff;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.exam-type-card .exam-type-en {
+  color: #6ea8fe;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.exam-type-card p:last-child {
+  color: #8892b0;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .format-timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .format-step {
+    max-width: 100%;
+  }
+}

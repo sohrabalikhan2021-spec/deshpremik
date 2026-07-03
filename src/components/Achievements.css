@@ -1,0 +1,160 @@
+.achievements {
+  background: #070b1a;
+}
+
+.medals-summary {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: rgba(20, 25, 50, 0.4);
+  border: 1px solid rgba(100, 140, 255, 0.12);
+  border-radius: 16px;
+}
+
+.medal-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  min-width: 80px;
+}
+
+.medal-emoji {
+  font-size: 2.5rem;
+}
+
+.medal-count {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.medal-label {
+  font-size: 0.85rem;
+  color: #8892b0;
+}
+
+.achievements-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.achievement-card {
+  background: rgba(20, 25, 50, 0.6);
+  border: 1px solid rgba(100, 140, 255, 0.12);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.achievement-card:hover {
+  border-color: rgba(100, 140, 255, 0.3);
+}
+
+.achievement-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.achievement-year {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #6ea8fe;
+  min-width: 65px;
+}
+
+.achievement-info h3 {
+  color: #c0d4ff;
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.achievement-location {
+  color: #8892b0;
+  font-size: 0.9rem;
+}
+
+.achievement-highlight {
+  background: linear-gradient(135deg, rgba(74, 122, 255, 0.15), rgba(110, 66, 202, 0.15));
+  border: 1px solid rgba(100, 140, 255, 0.2);
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  color: #b68aff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.achievement-awards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.award-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  background: rgba(30, 40, 70, 0.4);
+}
+
+.award-emoji {
+  font-size: 1.3rem;
+}
+
+.award-name {
+  color: #e0e8ff;
+  font-weight: 500;
+  flex: 1;
+}
+
+.award-type {
+  color: #8892b0;
+  font-size: 0.85rem;
+}
+
+.award-gold {
+  border-left: 3px solid #ffd700;
+}
+
+.award-silver {
+  border-left: 3px solid #c0c0c0;
+}
+
+.award-bronze {
+  border-left: 3px solid #cd7f32;
+}
+
+.award-honorable {
+  border-left: 3px solid #6ea8fe;
+}
+
+.award-special {
+  border-left: 3px solid #b68aff;
+}
+
+@media (max-width: 600px) {
+  .medals-summary {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .medal-emoji {
+    font-size: 1.8rem;
+  }
+
+  .medal-count {
+    font-size: 1.5rem;
+  }
+
+  .award-item {
+    flex-wrap: wrap;
+  }
+}
