@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sohrabalikhan2021-spec.github.io/deshpremik/sitemap.xml
